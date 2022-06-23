@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>pomodoro app</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="./images/favicon-32x32.png">
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <div id="container">
+
+            <img id='logo' src="./images/logo.svg">
+
+           <!-- TIMER MODE SELECTION -->
+            
+            <div id="pomodoroOrBreak">
+                <span id='pomo' class="options">pomodoro</span>
+                <span class="options">short break</span>
+                <span class="options">long break</span>
+            </div>
+
+           <!-- TIMER DISPLAY -->
+
+          <div id="timer-progress"> 
+            <div id="timer">
+                <h1>25</h1>
+                <h1>:</h1>
+                <h1>00</h1>
+                <div id="start-button" class="time-controls">START</div>
+                <div id="pause-button" class="time-controls">PAUSE</div>
+                <div id="restart-button" class="time-controls">RESTART</div>
+            </div>
+          </div>
+
+          <!-- SETTINGS PANEL -->
+
+            <img id='show_settings'src="./images/icon-settings.svg">
+            <div id="settings_panel">
+                <div id="upper_layer" class="settings_panel_divs">
+                    <h2>Settings</h2>
+                    <h2><img id='close'src="./images/icon-close.svg"></h2>
+                </div>
+                <hr>
+
+             <!-- SETTINGS PANEL - TIME SELECTION -->
+                <div id="time_layer">
+                    <div class="settings_panel_divs"><h4>TIME (Minutes)</h4></div>
+                    <div id='up_down_buttons_layer' class="settings_panel_divs">
+                        <div class="up_down_button_unit">
+                            <p>pomodoro</p>
+                            <div class="up_down_button_panel">
+                                <h3>25</h3>
+                                <div>
+                                    <img class='control up' id='up'src="./images/icon-arrow-up.svg">
+                                    <img class='control down'id='down'src="./images/icon-arrow-down.svg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="up_down_button_unit">
+                            <p>short break</p>
+                            <div class="up_down_button_panel">
+                                <h3>5</h3>
+                                <div>
+                                    <img class='control up' src="./images/icon-arrow-up.svg">
+                                    <img class='control down' src="./images/icon-arrow-down.svg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="up_down_button_unit">
+                            <p>long break</p>
+                            <div class="up_down_button_panel">
+                                <h3>15</h3>
+                                <div>
+                                    <img class='control up' src="./images/icon-arrow-up.svg">
+                                    <img class='control down' src="./images/icon-arrow-down.svg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+              <!-- SETTINGS PANEL - FONT SELECTION   -->
+                <div id="font_layer" class="settings_panel_divs">
+                    <h4>FONT</h4>
+                    <div id='font-selectors'>
+                        <div id='Helvetica'class="font-selector-icon fonthover">Aa</div>
+                        <div id='Georgia' class="font-selector-icon fonthover">Aa</div>
+                        <div id='Verdana' class="font-selector-icon fonthover">Aa</div>
+                    </div>
+                </div>
+              <!-- SETTING PANEL - COLOR SELECTION -->
+                <div id="color_layer" class="settings_panel_divs">
+                    <h4>COLOR</h4>
+                    <div id='color-selectors'>
+                        <div id="color1" class="font-selector-icon color-selectors"><img class="fontimg" src="./images/check-mark.svg"></div>
+                        <div id="color2" class="font-selector-icon color-selectors"><img class="fontimg" src=""></div>
+                        <div id="color3" class="font-selector-icon color-selectors"><img class="fontimg" src=""></div> 
+                    </div>
+                </div>
+                <p id="apply">Apply</p>
+            </div>
+        </div>
+        <!-- EXTERNAL JAVASCRIPT LINK -->
+        <script src="main.js"></script>  
+    </body>
+</html>
